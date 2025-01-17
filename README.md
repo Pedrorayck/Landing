@@ -1,40 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Landing
 
-## Getting Started
+Este é o repositório do projeto **Landing**, desenvolvido com [Next.js](https://nextjs.org/). Siga as instruções abaixo para rodar o projeto localmente.
 
-First, run the development server:
+## Pré-requisitos
+Certifique-se de que os seguintes requisitos estão atendidos antes de iniciar:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js instalado (versão 14 ou superior). [Baixe aqui](https://nodejs.org/).
+- Gerenciador de pacotes, como `npm` (instalado com o Node.js) ou `yarn` (opcional, [instale aqui](https://yarnpkg.com/)).
+- Git instalado. [Baixe aqui](https://git-scm.com/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Passo a passo para rodar o projeto
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. **Clone o repositório**
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   Use o comando abaixo para clonar o repositório:
+   ```bash
+   git clone https://github.com/Pedrorayck/Landing.git
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+2. **Acesse o diretório do projeto**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   Entre na pasta do projeto clonado:
+   ```bash
+   cd Landing
+   ```
 
-## Learn More
+3. **Instale as dependências**
 
-To learn more about Next.js, take a look at the following resources:
+   Execute um dos comandos abaixo para instalar as dependências do projeto:
+   
+   Com `npm`:
+   ```bash
+   npm install
+   ```
+   
+   Ou com `yarn`:
+   ```bash
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+4. **Configure as variáveis de ambiente**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   Renomeie o arquivo `.env.example` para `.env.local` e ajuste os valores das variáveis de ambiente conforme necessário:
+   ```bash
+   cp .env.example .env.local
+   ```
 
-## Deploy on Vercel
+5. **Inicie o servidor de desenvolvimento**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Execute o comando para iniciar o servidor local:
+   
+   Com `npm`:
+   ```bash
+   npm run dev
+   ```
+   
+   Ou com `yarn`:
+   ```bash
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+6. **Acesse o projeto no navegador**
+
+   Abra seu navegador e acesse:
+   ```
+   http://localhost:3000
+   ```
+
+## Scripts disponíveis
+
+- `dev`: Inicia o servidor de desenvolvimento.
+- `build`: Compila o projeto para produção.
+- `start`: Inicia o servidor da aplicação em modo de produção (necessário rodar o `build` antes).
+- `lint`: Verifica o código-fonte em busca de problemas.
+
+## Tecnologias usadas
+
+- **Next.js**: Framework React para renderização no lado do servidor.
+- **React**: Biblioteca JavaScript para interfaces de usuário.
+- **Tailwind CSS** (se aplicável): Framework CSS utilitário para estilização.
+
+## Contribuição
+
+Se deseja contribuir com o projeto, siga estas etapas:
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch:
+   ```bash
+   git checkout -b minha-nova-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m 'Adiciona minha nova feature'
+   ```
+4. Envie para o repositório remoto:
+   ```bash
+   git push origin minha-nova-feature
+   ```
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
