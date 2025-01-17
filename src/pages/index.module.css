@@ -1,0 +1,66 @@
+
+
+.background {
+  background-image: url('/imagens/fundo.jpg');
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  animation: gradient 15s ease infinite;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  transition: transform 1.3s;
+
+}
+
+.product-card:hover {
+  transform: scale(4.05);
+
+}
+
+.boldShadow {
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btt{
+  color: white;
+  border: none;
+  background-color: rgb(62, 96, 232);
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 5px; 
+  transition: all 0.3s ease;
+
+}
+.btt:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+.btt:active {
+  background-color: #003f7f; 
+  transform: scale(0.95); 
+}
